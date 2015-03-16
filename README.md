@@ -17,4 +17,12 @@ git clone git@github.com:sequenceiq/tunnelblick-config.git
 cd tunnelblick-config
 gun vpn-config
 ```
+# Configuration
+
+This tool can install your openVpn configuration. The only required configuration
+is the AWS s3 url of the tar gzipped tlbk directory.
+
+```
+export VPN_S3_URL=s3://mybucket/myconnection.tblk.tgz
+```
 
