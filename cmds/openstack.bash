@@ -4,6 +4,10 @@ init(){
     cmd-export vpn-config
 }
 
+jump-start() {
+    vpn-config
+}
+
 vpn-config() {
     declare desc="Installs TunnelBlick with a connection/profile with config.ovpn"
 
