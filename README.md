@@ -26,3 +26,18 @@ is the AWS s3 url of the tar gzipped tlbk directory.
 export VPN_S3_URL=s3://mybucket/myconnection.tblk.tgz
 ```
 
+# tl;dr
+
+for Tunnelblick a connectio/configuration is nothing else just a directory with `*.tlbk` extension.
+The are stored in `/Library/Application\ Support/Tunnelblick/Shared/`
+
+The directory structure shoud be the following:
+```
+/Library/Application Support/Tunnelblick/Shared/myconnection.tblk
+└── Contents
+    └── Resources
+        └── config.ovpn
+```
+
+Please note that the actual `*.ovpn` file **must be named as: config.ovpn**
+
